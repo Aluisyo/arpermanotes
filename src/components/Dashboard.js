@@ -24,8 +24,6 @@ const Dashboard = ({walletAddress, wallet}) => {
         input.onchange = () => {
             console.log(uploadFileRef.current.files);
 
-       
-
         };
 
         input.accept = "file/*";
@@ -39,8 +37,6 @@ const Dashboard = ({walletAddress, wallet}) => {
      const SavetextNotes =(e)=> {
         setTextNotes(e.target.value)
     };
-
-
    
   const success = () => {
   const hide = message.loading('Uploading Notes to Arweave Blockchain...', 0);
@@ -146,9 +142,9 @@ const openNotification = () => {
                         return (
                             <Col span = {12} key={index} className="card">
                             <h2>{obj.text}</h2>
-                            <img  src={obj.ph1loto} alt="User" style={{width: '100%'}}/>
+                            <embed  src={obj.ph1loto} alt="User" style={{width: '100%'}}/>
+							<a href={obj.ph1loto} download> Download </a>
                             <div className="container">
-                            <h4>{obj.text1}</h4>
                             <p>{obj.text2}</p>
                             </div>
                             </Col>
